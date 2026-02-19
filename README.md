@@ -73,3 +73,11 @@ Linkedln: https://www.linkdin.com/in/aluka-precious-b222a2356
 GitHub: https://github.com/Aluka-Analysis
 
 ## If you found this project useful, please give it a star!
+
+![Python](https://img.shield.io/badge/Python-3.10-blue)
+
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Project-green)
+
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
+
