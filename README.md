@@ -1,30 +1,41 @@
-# Titanic Survival Analysis
+# Titanic Survival Analysis and Prediction | End-to-End Machine Learning Project
 
 ## Project Overview
 
 This project explores and analyses the famous Titanic dataset to uncover insights into the factors that influenced passenger survival. 
 
-Using data analysis and machine learning techniques. I performed data cleaning, exploration, visualization, and feature analysis to understand survival patterns.
+Using data analysis and a complete machine learning pipeline to predict whether a passenger survived the Titanic disaster.
 
-## This project demonstrates my practical skills in:
+## This project demonstrates my practical skills in Deployment and covers the full Machine Learning lifecycle:
 
 -Data cleaning and prepocessing
 -Exploratory Data Analysis (EDA)
 -Data Visualization
 -Feature engineering and relationships
--Model building
--Data Interpretation
--Evaluation and insights
+-Model building / Trainng
+-Model Evaluation And Comparison
+-Model Optimization
+-Data Interpretation - (Model Deployment using Streamlit)
+
 
 ## Dataset Information
 
-The dataset contains information about Titanic passengers, including:
+Files used:
+
+-train.csv - Training Data
+-test.csv - Test Data
+
+The dataset contains information about Titanic passengers, including Features:
+
 -Age
 -Gender
 -Passsenger Class
 -Fare
 -Embarkation Port
--Survival Status
+
+While Target:
+
+-Survival (0 = No, 1 = Yes)
 
 Source: Kaggle Titanic Dataset
 
@@ -38,33 +49,115 @@ Source: Kaggle Titanic Dataset
 -Scikit-learn
 -Jupyter Notebook
 -Git & Github
+-Joblib
+-Streamlit
+-Git & Github
 
-## Key Analysis Performed
+## Key Analysis Performed Using Machine Learning Pipeline
 
--Data Cleaning
--Handling Missing Values
+### 1. Data Cleaning
+
+-Handled Missing Values
 -Survival Rate Analysis
 -Survival by Passenger Class
 -Age Distribution Analysis
--Data Visulization using charts and graphs
+-Coverted categorical variables
+-Removed irrelevant features
 
-## key Insights
+### 2. Exploratory Data Analysis
 
-Some important findings include:
--Females had a higher survival rate than males
--First-class passengers had higher survival chances
--Younger passengers had a slightly better survival rates
--Passenger class strongly influenced survival
+Key insights:
+
+-Females had higher survival rate
+-First-class passengers survived more
+-Removed irrelevant features
+
+### 3. Feature Engineering
+
+-Encoded categorical variables
+-Scaled numerical features
+
+### 4. Model Training 
+
+Models trained:
+
+-Logistic Regression
+-Random Forest Classifier
+
+### 5. Model Evaluation
+
+Metrics Used:
+
+-Accuracy
+-Confusion Matrix
+-ROC Curve
+-Cross Validation and model comparison
+
+Best Model Accuracy:
+
+**80%** (Logistic Regression)
+
+### 6. Model Deployment
+
+Deployed using Streamlit
+
+Users can predict survival interactively.
+
+## Live App Features
+
+Users Inputs:
+
+-Age
+-Gender
+-Passenger Class
+-Fare
+-Siblings and Spouse Aboard
+-Parents and Children Aboard
+-Embarked
+
+App predicts survival instantly.
+
+
+## Project Structure
+
+Titanic-analysis/
+|
+
+|--data/
+
+|--notebooks/
+
+|--Outputs\Visualization/
+    
+   |--Figures/
+
+   |-- models/
+
+|--app.py
+
+|--README.me
+
+|__requirements.txt
+
+## Skills Demonstrated
+
+-Data Analysis
+-Machine Learning
+-Data Cleaning
+-EDA
+-Feature Engineering
+-Model Deployment
+-Git Version Control
 
 ## Project Objective
 
-The goal of this project is to practice real-world data analysis and machine learning workflow and build portfolio projects that demonstrates my ability as a Data Analyst 
+The goal of this project is to practice and showcase real-world data analysis and machine learning workflow so as to build portfolio projects that demonstrates my ability as a Data Analyst and Machine Learning Engineer
 
 ## Author
 
 **Aluka Precious Oluchukwu**
 
-Data Analyst | Aspiring Macchine Learning Engineer | Emerging AI Specialist
+Data Analyst | Machine Learning Enthusiast
 
 ## Connect With Me
 
