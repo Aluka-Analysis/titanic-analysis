@@ -13,11 +13,10 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objects as go
 import seaborn as sns
+import altair as alt
 import warnings
-import os
 warnings.filterwarnings("ignore")
-import base64
-import io
+
 
 # Set page configuration
 
@@ -277,10 +276,9 @@ st.markdown("""
 st.subheader("Dataset Explorer")
 st.markdown("""
             
-            This section allows you to explore the Titanic dataset in more detail. You can view the dataset preview, feature importance, and survival distribution by different features. Use the tabs to navigate through different views of the dataset and gain insights into the factors that influenced survival on the Titanic.
-
-            """)
-
+            This section allows you to explore the Titanic dataset in more detail. You can view the survival distribution in passenger class by different features with age and fare. Use the tabs to navigate through different views of the dataset and gain insights into the factors that influenced survival on the Titanic.
+""")
+            
 selected_class = st.selectbox("Select Passenger Class to Explore", [1, 2, 3])
 
 filtered_data = data[data["Pclass"] == selected_class]
