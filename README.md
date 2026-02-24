@@ -161,7 +161,7 @@ Data Analyst | Machine Learning Enthusiast
 
 ## Connect With Me
 
-Linkedln: https://www.linkdin.com/in/aluka-precious-b222a2356
+Linkedln: https://www.linkedin.com/in/aluka-precious-b222a2356
 
 GitHub: https://github.com/Aluka-Analysis
 
