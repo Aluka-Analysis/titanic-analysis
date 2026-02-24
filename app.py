@@ -276,7 +276,7 @@ st.markdown("""
 st.subheader("Dataset Explorer")
 st.markdown("""
             
-            This section allows you to explore the Titanic dataset in more detail. You can view the survival distribution in passenger class by different features with age and fare. Use the tabs to navigate through different views of the dataset and gain insights into the factors that influenced survival on the Titanic.
+            This section allows you to explore the Titanic dataset in more detail. You can view the survival distribution in passenger class by different features with age and fare. Use the tabs to navigate through different views of the dataset and gain insights into the factors that influenced survival on the Titanic.p
 """)
             
 selected_class = st.selectbox("Select Passenger Class to Explore", [1, 2, 3])
