@@ -58,7 +58,7 @@ elif page == "Prediction":
 st.write("This web app  predicts whether a passenger would survive the Titanic disaster based on their characteristics using Machine Learning. Please input the passenger details by filling the sidebar to see the prediction result and survival probability.")
 
 # Load the model and scaler
-BASE_DIR =os.path.dirname(os.abspath(__file__))
+BASE_DIR =os.path.dirname(os.path.abspath(__file__))
 
 model = jb.load(os.path.join(BASE_DIR,"models", "titanic_Logistic_regression_model.pkl"))
 
