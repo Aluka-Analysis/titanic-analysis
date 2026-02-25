@@ -58,9 +58,10 @@ st.write("This web app  predicts whether a passenger would survive the Titanic d
 
 # Load the model and scaler
 
-model = joblib.load(r"C:\Users\DOUBLE J\Documents\data-projects\Titanic-analysis\Outputs\Visualization\models\titanic_Logistic_regression_model.pkl")
+import joblib as jb
+model = jb.load(r"C:\Users\DOUBLE J\Documents\data-projects\Titanic-analysis\Outputs\Visualization\models\titanic_Logistic_regression_model.pkl")
 
-scaler = joblib.load(r"C:\Users\DOUBLE J\Documents\data-projects\Titanic-analysis\Outputs\Visualization\models\titanic_scaler.pkl")
+scaler = jb.load(r"C:\Users\DOUBLE J\Documents\data-projects\Titanic-analysis\Outputs\Visualization\models\titanic_scaler.pkl")
 
 # Load the dataset for visualization
 
