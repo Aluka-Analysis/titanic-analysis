@@ -60,9 +60,9 @@ st.write("This web app  predicts whether a passenger would survive the Titanic d
 # Load the model and scaler
 BASE_DIR =os.path.dirname(os.path.abspath(__file__))
 
-model = jb.load(os.path.join(BASE_DIR,"models", "titanic_Logistic_regression_model.pkl"))
+model = jb.load(os.path.join(BASE_DIR,"Outputs", "Visualization", "models", "titanic_Logistic_regression_model.pkl"))
 
-scaler = jb.load(os.path.join(BASE_DIR, "models", "titanic_scaler.pkl"))
+scaler = jb.load(os.path.join(BASE_DIR, "Outputs", "Visualization", "models", "titanic_scaler.pkl"))
 
 # Load the dataset for visualization
 
