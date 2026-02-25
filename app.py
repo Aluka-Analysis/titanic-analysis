@@ -242,7 +242,7 @@ with tab2:
 for col in ["Pclass", "Sex", "Embarked", "Age", "Fare", "SibSp", "Parch"]:
 
     fig = px.histogram(data, x=col, color="Survived", barmode="group", title=f"Survival Distribution by {col}")
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
 
 
@@ -284,7 +284,7 @@ selected_class = st.selectbox("Select Passenger Class to Explore", [1, 2, 3])
 filtered_data = data[data["Pclass"] == selected_class]
 
 fig = px.scatter(filtered_data, x="Age", y="Fare", color="Survived", title=f"Survival Distribution for Passenger Class {selected_class}")
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, width="stretch")
 
 # About Page
 
