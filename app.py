@@ -66,7 +66,7 @@ scaler = jb.load(os.path.join(BASE_DIR, "models", "titanic_scaler.pkl"))
 
 # Load the dataset for visualization
 
-data = pd.read_csv(r"C:\Users\DOUBLE J\Documents\data-projects\Titanic-analysis\data\processed\Cleaned_Titanic.csv")
+data = pd.read_csv(os.path.join(BASE_DIR, "data","processed","Cleaned_Titanic.csv"))
 
 # Sidebar for visualizations
 
