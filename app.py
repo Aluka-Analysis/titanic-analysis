@@ -15,6 +15,7 @@ import plotly.graph_objects as go
 import seaborn as sns
 import altair as alt
 import warnings
+import os 
 warnings.filterwarnings("ignore")
 
 
@@ -57,11 +58,11 @@ elif page == "Prediction":
 st.write("This web app  predicts whether a passenger would survive the Titanic disaster based on their characteristics using Machine Learning. Please input the passenger details by filling the sidebar to see the prediction result and survival probability.")
 
 # Load the model and scaler
+BASE_DIR =os.path.dirname(os.abspath(__file__))
 
-import joblib as jb
-model = jb.load(r"C:\Users\DOUBLE J\Documents\data-projects\Titanic-analysis\Outputs\Visualization\models\titanic_Logistic_regression_model.pkl")
+model = jb.load(os.path.join(BASE_DIR,"models", "titanic_Logistic_regression_model.pkl"))
 
-scaler = jb.load(r"C:\Users\DOUBLE J\Documents\data-projects\Titanic-analysis\Outputs\Visualization\models\titanic_scaler.pkl")
+scaler = jb.load(os.path.join(BASE_DIR, "models", "titanic_scaler.pkl"))
 
 # Load the dataset for visualization
 
