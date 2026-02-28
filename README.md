@@ -1,176 +1,144 @@
-# Titanic Survival Analysis and Prediction | End-to-End Machine Learning Project
+# 🚢 Titanic Survival Prediction — Machine Learning Web App
 
-## Project Overview
+![Python](https://img.shields.io/badge/Python-3.13-blue?style=flat-square&logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red?style=flat-square&logo=streamlit)
+![ML](https://img.shields.io/badge/Machine%20Learning-Logistic%20Regression%20%7C%20Random%20Forest-green?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Live-brightgreen?style=flat-square)
 
-This project explores and analyses the famous Titanic dataset to uncover insights into the factors that influenced passenger survival. 
+> **A complete end-to-end Machine Learning web application** that predicts whether a passenger would have survived the Titanic disaster, built and deployed by **Aluka Precious Oluchukwu**.
 
-Using data analysis and a complete machine learning pipeline to predict whether a passenger survived the Titanic disaster.
-
-## This project demonstrates my practical skills in Deployment and covers the full Machine Learning lifecycle:
-
--Data cleaning and prepocessing
--Exploratory Data Analysis (EDA)
--Data Visualization
--Feature engineering and relationships
--Model building / Trainng
--Model Evaluation And Comparison
--Model Optimization
--Data Interpretation - (Model Deployment using Streamlit)
+🔗 **[View Live App](https://precious-titanic-analysis-gfhsuxsvmzuhbkfwixddpe.streamlit.app)**
 
 
-## Dataset Information
+##  Project Overview
 
-Files used:
+This project is a full end-to-end machine learning application built on the famous Titanic dataset. The app allows users to input passenger characteristics — such as class, gender, age, and fare — and receive a real-time prediction on whether that passenger would have survived the disaster, along with a survival probability score.
 
--train.csv - Training Data
--test.csv - Test Data
-
-The dataset contains information about Titanic passengers, including Features:
-
--Age
--Gender
--Passsenger Class
--Fare
--Embarkation Port
-
-While Target:
-
--Survival (0 = No, 1 = Yes)
-
-Source: Kaggle Titanic Dataset
-
-## Tools and Technologies Used
-
--Python
--Pandas
--Numpy
--Matplotlib
--Seaborn
--Scikit-learn
--Jupyter Notebook
--Git & Github
--Joblib
--Streamlit
--Git & Github
-
-## Key Analysis Performed Using Machine Learning Pipeline
-
-### 1. Data Cleaning
-
--Handled Missing Values
--Survival Rate Analysis
--Survival by Passenger Class
--Age Distribution Analysis
--Coverted categorical variables
--Removed irrelevant features
-
-### 2. Exploratory Data Analysis
-
-Key insights:
-
--Females had higher survival rate
--First-class passengers survived more
--Removed irrelevant features
-
-### 3. Feature Engineering
-
--Encoded categorical variables
--Scaled numerical features
-
-### 4. Model Training 
-
-Models trained:
-
--Logistic Regression
--Random Forest Classifier
-
-### 5. Model Evaluation
-
-Metrics Used:
-
--Accuracy
--Confusion Matrix
--ROC Curve
--Cross Validation and model comparison
-
-Best Model Accuracy:
-
-**80%** (Logistic Regression)
-
-### 6. Model Deployment
-
-Deployed using Streamlit
-
-Users can predict survival interactively.
-
-## Live App Features
-
-Users Inputs:
-
--Age
--Gender
--Passenger Class
--Fare
--Siblings and Spouse Aboard
--Parents and Children Aboard
--Embarked
-
-App predicts survival instantly.
+The project covers the entire machine learning pipeline from raw data to a live deployed web application, including data cleaning, exploratory data analysis, feature engineering, model training, model comparison, and cloud deployment.
 
 
-## Project Structure
+##  Live Application
 
-Titanic-analysis/
-|
+The app is deployed and fully accessible at:
 
-|--data/
+**https://precious-titanic-analysis-gfhsuxsvmzuhbkfwixddpe.streamlit.app**
 
-|--notebooks/
+The application has five main sections accessible via the navigation sidebar:
 
-|--Outputs\Visualization/
-    
-   |--Figures/
+- **Home** — An introduction to the project, its purpose, and how to use it.
+- **Prediction** — Users fill in passenger details and the model returns a prediction and survival probability in real time.
+- **Dashboard** — Interactive charts exploring survival distributions by passenger class, gender, age and other titanic features.
+- **Dataset Explorer** — Allows users to explore the cleaned dataset directly within the app.
+- **About** - Users get more insight about the author and what the app entails.
 
-   |-- models/
+---
 
-|--app.py
+##  Machine Learning Models
 
-|--README.me
+Two classification models were trained and compared for this project.
 
-|__requirements.txt
+- **Logistic Regression** — Used as the baseline model. Interpretable and well-suited to binary classification problems.
+- **Random Forest Classifier** — A more powerful ensemble model that builds multiple decision trees and combines their outputs for higher accuracy.
 
-## Skills Demonstrated
+Both models were evaluated using accuracy score, confusion matrix, and ROC curve analysis. The best-performing model Logistic Regression with an accuracy of **80%** was saved for use in the live prediction app.
 
--Data Analysis
--Machine Learning
--Data Cleaning
--EDA
--Feature Engineering
--Model Deployment
--Git Version Control
 
-## Project Objective
+##  Project Structure
+```
+titanic-analysis/
+│
+├── app.py                        # Main Streamlit application file
+├── requirements.txt              # Python dependencies for deployment
+├── runtime.txt                   # Python runtime version specification
+├── README.md                     # Project documentation
+│
+├── data/
+│   ├── raw/
+│   │   ├── train.csv             # Original Titanic training dataset
+│   │   └── test.csv              # Original Titanic test dataset
+│   └── processed/
+│       ├── Cleaned Titanic.csv
+│       └── Final Cleaned Titanic ML.csv
+│
+├── notebooks/
+│   └── 01 titanic ml.ipynb       # Full ML pipeline notebook
+│
+└── Outputs/
+    └── Visualization/
+        ├── models/
+        │   ├── titanic_Logistic_regression_model.pkl
+        │   ├── titanic_Random_Forest_model.pkl
+        │   └── titanic_scaler.pkl
+        └── figures/
+            ├── Correlation_Heatmap.png
+            ├── Logistic_Regression_Confusion_Matrix.png
+            ├── Random_Forest_Confusion_Matrix.png
+            ├── Model_Accuracy_Comparison.png
+            └── Survival_By_Class.png
+```
 
-The goal of this project is to practice and showcase real-world data analysis and machine learning workflow so as to build portfolio projects that demonstrates my ability as a Data Analyst and Machine Learning Engineer
+##  Technologies Used
 
-## Author
+| Category | Tools |
+|---|---|
+| Language | Python 3.13 |
+| Data Manipulation | Pandas, NumPy |
+| Machine Learning | Scikit-learn |
+| Visualisation | Matplotlib, Seaborn, Plotly, Altair |
+| Web App Framework | Streamlit |
+| Model Serialisation | Joblib |
+| Deployment | Streamlit Cloud |
+| Version Control | Git & GitHub |
 
-**Aluka Precious Oluchukwu**
+##  Running the App Locally
 
-Data Analyst | Machine Learning Enthusiast
+**Step 1 — Clone the repository:**
+```bash
+git clone https://github.com/Aluka-Analysis/titanic-analysis.git
+cd titanic-analysis
+```
+
+**Step 2 — Install dependencies:**
+```bash
+pip install -r requirements.txt
+```
+
+**Step 3 — Run the app:**
+```bash
+streamlit run app.py
+```
+
+**Step 4** — Open your browser at `http://localhost:8501`
+
+
+##  Key Insights from the Data
+
+- **Gender** was the strongest predictor of survival — female passengers survived at a significantly higher rate, reflecting the "women and children first" protocol.
+- **Passenger class** was the second most important factor — first-class passengers survived at a much higher rate than third-class passengers.
+- **Age** played a nuanced role — younger children had higher survival rates while middle-aged men had the lowest.
+- **Fare** was correlated with survival largely because it served as a proxy for passenger class.
+
+
+
+##  Acknowledgements
+
+Special gratitude to the **Incubator Hub** bootcamp on YouTube and the facilitators **Isreal** and **Ezekiel**, whose teaching gave me my first real understanding of data analysis and data science. You cannot build a house without a foundation, they were mine.
+
+To my eldest brother **Victor Aluka**, who saw potential in an idle laptop and pointed me toward this field, that one conversation changed my trajectory.
+
+The Titanic dataset is sourced from **[Kaggle](https://www.kaggle.com/competitions/titanic)**.
+
+
+##  About the Author
+
+**Aluka Precious Oluchukwu** is a Data Analyst and a aspiring Machine Learning Engineer with a background in Philosophy from the University of Port Harcourt, Nigeria. He is currently building in public, one project at a time.
 
 ## Connect With Me
 
-Linkedln: https://www.linkedin.com/in/aluka-precious-b222a2356
+🔗 [GitHub](https://github.com/Aluka-Analysis) | 💼 [LinkedIn](https://www.linkedin.com/in/aluka-precious-b222a2356) | 🌐 [Live App](https://precious-titanic-analysis-gfhsuxsvmzuhbkfwixddpe.streamlit.app)
 
-GitHub: https://github.com/Aluka-Analysis
+
+*Built with curiosity, persistence, and a Philosophy degree. App predicts survival instantly!* 
+
 
 ## If you found this project useful, please give it a star!
-
-![Python](https://img.shield.io/badge/Python-3.10-blue)
-
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Project-green)
-
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-
-
